@@ -1,65 +1,186 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
-    
+
 }
 
-main{
+main {
     height: 100%;
     width: 100%;
-   
+  /* position: fixed; */
 
 }
-nav{
-    height: 13%;
-    /* background-color: red; */
-}
-.navi{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .content-1 {
     width: 100%;
-  
-   
+ 
 }
-.content-1 > img{
+
+.content-1>img {
     width: 100%;
 
 }
 .layer{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+ width: 100%;
+}
+.nav{
+    width: 100%;
+    display: flex;
+ 
+     position: absolute;
+    top: 5%;
+    left: 5%;
+    gap: 50px;
+}
+.nav-H{
+    display: flex;
+     gap: 70px;
+     
+}
+.nav-H > h3{
+    margin: 3% 0;
+}
+.nav-H > h3 > span{
+   color: white;
+}
+.nav-H > img{
+    width: 55px;
+    border-radius: 50%;
+  
+   
+}
+.click{
+    width: 100%; 
+     margin-left: 20%;
+    /* display: flex; */
+    gap: 30px;
+
+}
+ .click > button {
+    padding: 10px 16px;
+    background-color: rgb(211, 155, 155);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin: 5% 2%;
+    font-size: 16px;
+}
+#Login{
+  background-color: white;
+  color: black;
+ 
+}
+
+.layer2{
+    /* width: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 
 }
-.layer > h1{
+
+.layer2>h1 {
     font-size: 45px;
     font-weight: 900;
 }
-.layer > h1 > span{
- color: rgb(222, 40, 40);
+
+.layer2>h1>span {
+    color: rgb(222, 40, 40);
 }
-.layer > p{
- padding: 3% 0;
- font-size: 18px;
- font-weight: 500;
+
+.layer2>p {
+    padding: 3% 0;
+    font-size: 18px;
+    font-weight: 500;
 }
-.layer > button{
+
+.layer2 > button {
     padding: 2% 4%;
-    background-color:rgb(211, 155, 155);
+    background-color: rgb(211, 155, 155);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+/*============================== */
+
+.icon{
+    position: absolute;
+    top:45%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+}
+
+
+/* ==============content3=============== */
+
+.content-3{
+    position: absolute;
+    top: 93%;
+   left: 50%;
+    transform: translate(-50%, -50% );
+   color: rgb(127, 121, 121);
+
+}
+
+/* ======================responsive */
+@media (max-width:600px){
+      
+    body{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .nav > .nav-H{
+       display: flex;
+       flex-direction: column;
+    }
+    .nav > .nav-H > h3{
+       display: none;
+       
+    }
+    .content-1{
+        width: 100%;
+        height: 100%;
+    }
+    .content-1 > img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .layer2 > h1{
+        margin-bottom: 20%;
+        font-size: 30px;
+       
+        
+    }
+    .layer2 > p{
+        padding-bottom: 30%;
+        font-size: 14px;
+    }
+    .layer2 >.button{
+        font-size: 10px;
+    }
+    .content-3 > p{
+     font-size: 10px;
+    }
+
+
+
 }
