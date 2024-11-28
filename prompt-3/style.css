@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url("photo-1732624697703-c5b0d3110cb4.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: fixed */
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav{
+    height: 13%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:30% ;
+    gap:40px;
+    font-size: 20px;
+    
+}
+.nav-content{
+    display: flex;
+    gap: 30px;
+
+}
+nav > a{
+    text-decoration: none;
+}
+.nav-content > input{
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+nav > .click{
+   margin: 0 3%;
+    
+}
+nav > .click > button{
+  padding: 4px 8px;
+  border-radius: 30px;
+    
+}
+
+.content{
+    width: 30%;
+    margin: 10% 5%;
+}
+.content > h1{
+    font-size: 45px;
+}
+.content > p{
+    font-size: 19px;
+    padding: 10px 0;
+}
+.content > button{
+    font-size: 19px;
+    padding: 4px 8px;
+    margin: 1% ;
+    border-radius: 30px;
+}
+footer > h3{
+    font-size: 15px;
+    padding: 0 4%;
+}
+
+/* ====================responsive======== */
+
+@media (max-width:600px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    main{
+        width: 100%; 
+         height: 100%;
+         
+    }
+    
+  .content > h1 {
+      font-size: 40px;
+      color: red;
+  }
+    
+    /* nav{
+        display: flex;
+
+    } */
+    nav >.nav-content > a{
+        display: flex;
+    }
+    nav >.click> .button{
+        display: none;
+    }
+
+}
